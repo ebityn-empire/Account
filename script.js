@@ -19,6 +19,10 @@ function join () {
   textTextBox2.type = 'text';
   textTextBox2.id = "B" + count;
   textTextBox2.placeholder = 'ここに名前を入力';
+  const message2 = document.createElement('p')
+  message2.innerHTML = '数字を入力してください。'
+  message2.style.cssText = "margin: 0;"
+  loop.appendChild(message2)
   loop.appendChild(textTextBox2);
   const br = document.createElement('br')
   loop.appendChild(br)
