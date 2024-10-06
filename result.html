@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>結果</title>
+</head>
+<body>
+<div id="kekka"></div>
+
+  <script>
+    const par = new URLSearchParams(window.location.search);
+    const count = par.get("count");
+    const kekka = document.getElementById("kekka")
+    for (let i = 1; i < count; i++){
+      if(par.get("A"+i) !== null && par.get("B"+i) !== null){
+    let result = `${par.get("A"+i)}→${par.get("B"+i)} : ${par.get("C"+i)}円`
+  const message = document.createElement('p')
+  message.innerHTML = result
+  kekka.appendChild(message)
+      }}
+  </script>
+</body>
+</html>
