@@ -24,8 +24,6 @@ function join () {
   message2.innerHTML = '数字を入力してください。'
   message2.style.cssText = "margin: 0;"
   loop.appendChild(message2)
-  const br = document.createElement('br')
-  loop.appendChild(br)
   // 数字用のテキストボックス
   for (let i = 1; i <= 40; i++){
   const numberTextBox = document.createElement('input');
