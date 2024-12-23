@@ -4,7 +4,7 @@ let count = 3;
 function join () {
   // 文字列用のテキストボックス
   const message = document.createElement('p')
-  message.innerHTML = ':支払い元      　　   :支払い先'
+  message.innerHTML = ':支払い元      　　 　　  :支払い先'
   message.style.cssText = "margin: 0;"
   loop.appendChild(message)
   const textTextBox = document.createElement('input');
